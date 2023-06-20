@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html decorate="layouts/defaultLayout">
+<head>
+<meta charset="UTF-8">
+<title>Fresh Apples</title>
+
+<link href="/css/bootrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<div th:replace="layouts/commonHeader :: header">My header.</div>
+
+<!-- content -->
+<section layout:fragment="content">
+<p>Replace with page that contains layout:fragment="content"</p>
+</section>
+
+<!-- footer -->
+<div th:replace="layouts/commonFooter :: footer">My header.</div>
+</body>
+</html>

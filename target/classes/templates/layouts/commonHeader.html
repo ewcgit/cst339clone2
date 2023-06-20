@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="header">
+	<center><img src="https://i.imgur.com/Fov0hj0.png" width="240" height="240"></center>
+	<body style="background-color:aquamarine;">
+
+<!-- nav bar -->
+<nav th:fragment="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" th:href="@{/}">SITEMAP</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a class="nav-link" th:href="@{/home}">Home Page</a></li>
+
+            <li><a class="nav-link" th:href="@{/Login}">Login</a></li>
+
+            <li><a class="nav-link" th:href="@{/Registration}">Registration</a></li>    
+        </ul>
+    </div>    
+</nav>
+</div>
